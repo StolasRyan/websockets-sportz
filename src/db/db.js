@@ -10,4 +10,4 @@ if(!process.env.DATABASE_URL) {
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
 });
-const db = drizzle({ client: pool });
+export const db = drizzle({ client: pool });
